@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root {
+  --color-primary: #F1CDB3;
+  --color-primary-light: #FDDCC4;
+  --color-dark-s: #CDCDCD;
+  --color-dark-3xl: #292929;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4C4C4C;
+  --color-dark-m: #B2B2B2;
+  --color-light-l: #F6F6F6;
+  --color-light-s: #FAFAFA;
+}
+
+header {
+  background-image: none;
+  flex-shrink: 0;
+}
+
+header div:not(#header-content) {
+  padding-top: 30px;
+}
+
+#header-content {
+  padding: 0;
+  min-height: 120px;
+}
+
+.header-nav {
+  margin: auto;
+  padding: 0px 0 30px 40px;
+  min-height: 60px;
+}
+
+header img {
+  width: 184px;
+}
+
+header nav {
+  width: 39%;
+  min-width: 480px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  padding: 0;
+  margin: 10px 5px;
+  width: 110px;
+  text-align: center;
+}
+
+header ul {
+  width: 100%;
+}
+
+header a {
+  color: var(--color-dark-l) !important;
+  font-size: 0.9rem !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sidebar {
+  background: var(--color-light-l);
+}
+
+.sidebar nav {
+  margin-left: 10px;
+  width: 300px;
+}
+
+.sidebar li {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  color: var(--color-dark-l) !important;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light-l);
+}
+
+main section {
+  min-height: 1342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+}
+
+main h2 {
+  padding-right: 40px;
+  font-size: 2.1rem;
+  text-align: center;
+  width: 37%;
+  min-width: 430px;
+  margin: 20px auto 60px auto;
+}
+
+#slider-cards {
+  justify-content: center;
+  margin: 0 auto !important;
+  width: 100%;
+  max-width: 1230px;
+  min-height: 930px;
+  max-height: none;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 10px;
+  max-width: 270px;
+  max-height: 435px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card .container-img {
+  max-width: 270px;
+  max-height: 270px;
+  min-height: 270px;
+  width: 100%;
+  margin-bottom: 34px;
+  overflow: hidden;
+}
+
+.card img {
+  margin-top: 0;
+  margin-bottom: auto;
+  max-width: 270px;
+  max-height: 270px;
+}
+
+.card p {
+  margin-bottom: 9%;
+}
+
+.navigate-btns {
+  margin: 34px auto;
+  width: 100%;
+  max-width: 340px;
+  max-height: 52px;
+}
+
+.navigate-btns button {
+  border: 2px solid var(--color-primary);
+  color: var(--color-dark-3xl);
+  font-family: Georgia;
+  font-size: 1.4rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.navigate-btns button:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.navigate-btns button.inactive {
+  color: var(--color-dark-s);
+  border-color: var(--color-dark-s);
+  background-color: transparent;
+}
+
+#pet-name {
+  margin-top: 20px;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+
+@media(max-width: 768px) {
+
+  #header-content {
+    padding-top: 30px;
+  }
+
+  .header-nav {
+    padding: 0 10px 0px 30px !important;
+    width: 100%;
+  }
+
+  header nav {
+    min-width: 100px;
+    width: 70%;
+    max-width: 453px;
+    margin-right: 0;
+  }
+
+  header li {
+    width: auto;
+  }
+
+  main {
+    min-height: 1733px;
+  }
+
+  main h2 {
+    margin-top: 40px;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  #slider-cards {
+    max-width: 640px;
+    min-height: 1365px;
+    height: 1365px
+  }
+
+  .card {
+    margin: 0 2% 30px 2%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .navigate-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+}
+
+@media(max-width:470px) {
+
+  .header-nav{
+    margin: 0;
+  }
+
+  .header-nav .menu-btn{
+    margin-right: 5%;
+  }
+
+  main {
+    min-height: 1649px;
+    margin: 0;
+  }
+
+  main section {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  main h2 {
+    margin-top: 10%;
+    font-size: 1.8rem;
+    max-width: 360px;
+    width: 100%;
+    min-width: 10px;
+  }
+
+  #slider-cards {
+    min-height: 1365px;
+    max-height: none;
+  }
+
+  .card {
+    max-width: 270px;
+    max-height: 435px;
+    min-height: 435px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .card p {
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  footer {
+    min-height: 809px;
+  }
+}

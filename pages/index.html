@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../styles/index.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy House</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="header-content">
+      <div class="header-nav">
+        <img src="../assets/images/logo.png" alt="logo">
+        <nav>
+          <ul>
+            <li><a href="#about-shelter">About the shelter</a></li>
+            <li><a href="#about-pets">Our pets</a></li>
+            <li><a href="#help">Help the shelter</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn">
+          <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="21" x2="30" y2="21" stroke="#F1CDB3" stroke-width="2" />
+            <line y1="11" x2="30" y2="11" stroke="#F1CDB3" stroke-width="2" />
+            <line y1="1" x2="30" y2="1" stroke="#F1CDB3" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+      <div class="sidebar">
+        <section>
+          <img src="../assets/images/logo.png" alt="logo">
+          <button class="menu-btn">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="24" y1="30" x2="24" stroke="#F1CDB3" stroke-width="2" />
+              <line x1="14" y1="30" x2="14" stroke="#F1CDB3" stroke-width="2" />
+              <line x1="4" y1="30" x2="4" stroke="#F1CDB3" stroke-width="2" />
+            </svg>
+          </button>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="#about-shelter">About the shelter</a></li>
+            <li><a href="#about-pets">Our pets</a></li>
+            <li><a href="#help">Help the shelter</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-section">
+        <section>
+          <h1>Not only people need a house</h1>
+          <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will
+            love you more than anybody else in the world, you will see!</p>
+          <button class="btn-primary">Make a friend</button>
+        </section>
+        <img src="../assets/images/first-dog.png" alt="dog" id="first-dog-img">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="first-main" id="about-shelter">
+      <div id="first-main-content">
+        <img src="../assets/images/second-dogs.png" alt="two dogs">
+        <section>
+          <h2>
+            About the shelter “Cozy House”
+          </h2>
+          <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a
+            family. The others will continue to live with us and will be waiting for a lucky chance to become dearly
+            loved.
+          </p>
+          <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including
+            psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About
+            12%
+            of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets
+            and
+            would hardly ever leave them alone.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="second-main">
+      <div id="second-main-content">
+        <h2 id="about-pets">Our friends who
+          are looking for a house</h2>
+        <section>
+          <svg class="arrow-svg" id="arrow-left" width="14" height="6" viewBox="0 0 14 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="currentColor" />
+          </svg>
+          <div id="slider-cards"></div>
+          <svg class="arrow-svg" id="arrow-right" width="14" height="6" viewBox="0 0 14 6" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="currentColor" />
+          </svg>
+        </section>
+        <button class="btn-primary">Get to know the rest</button>
+
+        <dialog id="card-modal">
+          <button id="close-card-modal">&times;</button>
+          <div>
+            <figure id="capture"></figure>
+            <section>
+              <h1 id="pet-name"></h1>
+              <p id="pet-type"></p>
+              <p id="pet-bio"></p>
+              <ul>
+                <li><strong>Age: </strong>
+                  <p id="pet-age"></p>
+                </li>
+                <li><strong>Diseases: </strong>
+                  <p id="pet-diseases"></p>
+                </li>
+                <li><strong>Inoculations: </strong>
+                  <p id="pet-inoculations"></p>
+                </li>
+                <li><strong>Parasites: </strong>
+                  <p id="pet-parasites"></p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+    <section class="third-main" id="help">
+      <div id="third-main-content">
+        <h2>How you can help our shelter</h2>
+        <section>
+          <figure>
+            <img src="../assets/images/List items/pet-food.png" alt="pet food image">
+            <figcaption>Pet Food</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/transportation.png" alt="transportation image">
+            <figcaption>Transportation</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/toys.png" alt="toys image">
+            <figcaption>Toys</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/bowls-and-cups.png" alt="bowls and cups image">
+            <figcaption>Bowls and Cups</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/shampoos.png" alt="shampoos image">
+            <figcaption>Shampoos</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/vitamins.png" alt="vitamins image">
+            <figcaption>Vitamins</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/medicines.png" alt="medicines image">
+            <figcaption>Medicines</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/collars-or-leashes.png" alt="collars or leashes image">
+            <figcaption>Collars / leashes</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/List items/sleeping-areas.png" alt="sleeping areas image">
+            <figcaption>Sleeping areas</figcaption>
+          </figure>
+        </section>
+      </div>
+    </section>
+
+    <section class="fourth-main">
+      <div id="fourth-main-content">
+        <img src="../assets/images/third-dog.png" alt="small dog">
+        <section>
+          <h2>You can also make a donation</h2>
+          <p>Name of the bank / Type of bank account</p>
+          <div><img src="../assets/images/credit-card.png" alt="credit card info"></div>
+          <article>
+            <p>
+              Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero
+              sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames
+              ac
+              ante ipsum primis in faucibus.
+            </p>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div id="footer-content">
+      <section>
+        <h1>For questions and suggestions</h1>
+        <figure>
+          <img src="../assets/images/mail.png" alt="mail image">
+          <figcaption>email@shelter.com</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/phone.png" alt="phone image">
+          <figcaption>+13 674 567 75 54</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h1>We are waiting for your visit</h1>
+        <figure>
+          <img src="../assets/images/pin.png" alt="pin image">
+          <figcaption>1 Central Street, Boston (entrance from the store)</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/pin.png" alt="pin image">
+          <figcaption>18 South Park, London</figcaption>
+        </figure>
+      </section>
+      <img src="../assets/images/fifth-dog.png" alt="cute dog" class="footer-dog-img">
+    </div>
+  </footer>
+
+  <script type="module" src="../scripts/index.js"></script>
+</body>
+
+</html>
